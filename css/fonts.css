@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'astra';
+    src: url(../fonts/Astra-6RGXq.otf) format('opentype');
+}
+@font-face {
+    font-family: 'ayles';
+    src: url(../fonts/AylesburyValeDemo-Rp9rE.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'epic';
+    src: url(../fonts/epicpro.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'estrada';
+    src: url(../fonts/Estrada\ Signature-free.otf) format('opentype');
+}
+@font-face {
+    font-family: 'opti';
+    src: url(../fonts/OPTIUniversSixtySeven.otf) format('opentype');
+}
+@font-face {
+    font-family: 'rascal';
+    src: url(../fonts/RASCAL__.TTF) format('truetype');
+}
+@font-face {
+    font-family: 'rusill_light';
+    src: url(../fonts/Rusillaserif-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'rusill_regular';
+    src: url(../fonts/Rusillaserif-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'siegra';
+    src: url('../fonts/Siegra.ttf') format('truetype');
+}

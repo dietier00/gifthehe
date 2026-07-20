@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="Flower Gift">
+    <meta name="keywords" content="flowers, gift, keepsake, bouquet">
+    <meta name="description" content="A quiet digital flower gift designed as an editorial keepsake.">
+    <title>Flower Gift</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+</head>
+<body class="m-0 min-h-screen overflow-x-hidden text-[#101214] bg-[#e7dfd3]">
+
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <!-- background orbs -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
+        <span class="orb-a absolute rounded-[50%] opacity-65 w-[34rem] h-[34rem] -top-44 -right-44 bg-[#d9c8b2] max-sm:w-[22rem] max-sm:h-[22rem] max-sm:-top-28 max-sm:-right-36"></span>
+        <span class="orb-b absolute rounded-[50%] opacity-65 w-[22rem] h-[22rem] bottom-32 -left-28 bg-[#d1ddd0] max-sm:w-64 max-sm:h-64 max-sm:bottom-48 max-sm:-left-20"></span>
+        <span class="orb-c absolute rounded-[50%] opacity-65 w-[14rem] h-[14rem] bottom-72 right-[10%] bg-[#efe1d4] max-sm:w-40 max-sm:h-40 max-sm:bottom-80 max-sm:right-[6%]"></span>
+    </div>
+
+    <div id="smooth-wrapper" class="relative">
+        <div id="smooth-content" class="relative z-1 min-h-screen">
+            <header class="flex justify-between items-end gap-6 w-[min(1120px,calc(100%-2rem))] mx-auto py-6 pb-2 max-md:flex-col max-md:items-start">
+                <div class="brand-lockup">
+                    <h1 class="m-0 font-['ayles'] tracking-[-0.04em] leading-[0.96] text-[clamp(2rem,4vw,3.25rem)]">For Aila^^</h1>
+                </div>
+                <p class="header-note max-w-[26rem] m-0 text-[#5f625d] text-right uppercase tracking-[0.22em] text-[0.75rem] max-md:text-left"></p>
+            </header>
+
+            <main id="content">
+                <section class="pt-5 pb-16 w-[min(1120px,calc(100%-2rem))] mx-auto max-sm:w-[min(calc(100%-1.25rem),1120px)]">
+                    <div class="grid grid-cols-[minmax(280px,0.92fr)_minmax(320px,1.08fr)] gap-[clamp(1.5rem,4vw,4rem)] items-start max-md:grid-cols-1">
+                        <aside class="sticky top-6 self-start grid gap-4 max-md:static">
+                            <div class="card relative min-h-[72vh] grid place-items-center p-[clamp(1rem,2vw,1.5rem)] overflow-hidden max-md:min-h-[52vh]">
+                                <div class="book">
+                                    <img src="images/IMG_20260607_001609_557.jpg" alt="" class="w-full h-full object-cover">
+                                    <div class="cover ">
+                                        <img src="images/IMG_20260607_001614_292.jpg" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between gap-4 items-center px-[1.15rem] py-[0.95rem] border border-[rgba(16,18,20,0.14)] rounded-full bg-white/36 text-[#5f625d] shadow-[0_10px_24px_rgba(16,18,20,0.05)] max-sm:flex-col max-sm:items-start max-sm:rounded-[24px] max-sm:gap-[0.35rem]">
+                                <span class="font-['opti'] uppercase tracking-[0.22em] text-[0.75rem]">You're sooo beautiful</span>
+                                <span class="font-['opti'] uppercase tracking-[0.22em] text-[0.60rem]">You always makes me smile;)</span>
+                            </div>
+                            
+                        </aside>
+
+                        <div class="pt-[clamp(0.5rem,4vw,3.25rem)]">
+                            <p class="uppercase tracking-[0.22em] text-[0.75rem] text-[#315344] mb-[0.55rem]" data-reveal>Just my impulsive thoughts to do this hehe</p>
+                            <h2 class="mx-auto text-center max-w-[10.5ch] m-0 font-['ayles'] tracking-[-0.04em] leading-[0.96] text-[clamp(3.6rem,8.8vw,7.9rem)] max-sm:max-w-[11ch] max-sm:text-[clamp(2.8rem,13vw,4.2rem)]" data-reveal>A simple gift for you, my Aila. it may not be much, but it's an effort that I could put into it.</h2>
+                            <p class="max-w-[36rem] mt-[1.4rem] text-[clamp(1.05rem,1.7vw,1.25rem)] leading-[1.65] text-[#5f625d]" data-reveal>I know you stopped me from spending money to buy you flowers. So I made a digital gift instead hehe;P</p>
+
+                            <!--<div class="grid grid-cols-3 gap-[0.9rem] mt-8 max-sm:grid-cols-1 max-md:grid-cols-1">
+                                <article class="min-h-[9.5rem] flex flex-col justify-between gap-4 p-4 border border-[rgba(16,18,20,0.14)] bg-[#f5efe6] shadow-[0_18px_40px_rgba(16,18,20,0.08)] rounded-[22px]" data-reveal>
+                                    <span class="text-[#8e6240] text-[0.78rem] tracking-[0.22em] uppercase">01</span>
+                                    <strong class="font-['rusill_regular'] text-[clamp(1.3rem,2vw,1.65rem)] leading-none">Tenderness</strong>
+                                    <p class="m-0 text-[#5f625d]">Soft color, soft timing, no noise.</p>
+                                </article>
+                                <article class="min-h-[9.5rem] flex flex-col justify-between gap-4 p-4 border border-[rgba(16,18,20,0.14)] bg-[#f5efe6] shadow-[0_18px_40px_rgba(16,18,20,0.08)] rounded-[22px]" data-reveal>
+                                    <span class="text-[#8e6240] text-[0.78rem] tracking-[0.22em] uppercase">02</span>
+                                    <strong class="font-['rusill_regular'] text-[clamp(1.3rem,2vw,1.65rem)] leading-none">Presence</strong>
+                                    <p class="m-0 text-[#5f625d]">Clear structure that keeps the focus on the gift.</p>
+                                </article>
+                                <article class="min-h-[9.5rem] flex flex-col justify-between gap-4 p-4 border border-[rgba(16,18,20,0.14)] bg-[#f5efe6] shadow-[0_18px_40px_rgba(16,18,20,0.08)] rounded-[22px]" data-reveal>
+                                    <span class="text-[#8e6240] text-[0.78rem] tracking-[0.22em] uppercase">03</span>
+                                    <strong class="font-['rusill_regular'] text-[clamp(1.3rem,2vw,1.65rem)] leading-none">Memory</strong>
+                                    <p class="m-0 text-[#5f625d]">Small details that make the page feel personal.</p>
+                                </article>
+                            </div>-->
+
+                            <div class=" gap-[0.9rem] mt-8 max-sm:grid-cols-1 max-md:grid-cols-1">
+                                <h1 class="tracking-[0.22em] text-2xl font-['estrada']">A Gallery of Us
+                                    <svg version="1.1" id="HEART" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="12px" height="12px" viewBox="0 0 1800 1800" enable-background="new 0 0 1800 1800" xml:space="preserve">
+<g>
+	<path fill="#333333" d="M1598.646,483.59c0-159.066-151.555-242.271-232.804-242.271c-17.445,0-31.592,14.14-31.592,31.594
+		c0,17.444,14.146,31.592,31.592,31.592c50.731,0,169.618,60.929,169.618,179.084c0,17.444,14.147,31.593,31.593,31.593
+		C1584.508,515.183,1598.646,501.034,1598.646,483.59z"/>
+	<path fill="#333333" d="M1245.167,67.346c-8.005,0-15.974,0.176-23.897,0.515c-124.318-6.434-239.696,39.191-324.708,117.896
+		C802.382,111.649,683.698,67.346,554.832,67.346C249.563,67.346,1.211,315.7,1.211,620.971
+		c0,169.59,76.672,321.587,197.146,423.214l679.305,679.309c5.924,5.923,13.963,9.246,22.337,9.246
+		c8.384,0,16.413-3.323,22.347-9.246l679.218-679.238c120.519-101.636,197.227-253.659,197.227-423.285
+		C1798.79,315.7,1550.438,67.346,1245.167,67.346z M899.999,1656.474l-505.608-505.617L241.498,997.96l-60.105-60.101
+		c-0.744-0.749-1.52-1.445-2.323-2.098c-71.524-85.24-114.673-195.066-114.673-314.791c0-270.426,220.008-490.44,490.435-490.44
+		c111.765,0,214.891,37.604,297.452,100.783c0.309,0.229,0.599,0.476,0.908,0.714c-56.627,69.7-92.777,157.083-98.507,253.368
+		c-1.04,17.418,12.235,32.377,29.654,33.409c0.643,0.044,1.278,0.062,1.913,0.062c16.581,0,30.508-12.94,31.505-29.715
+		c5.059-85.082,37.825-162.045,88.959-222.683c13.021-12.438,26.683-24.197,40.999-35.154
+		c76.84-58.798,171.504-95.406,274.348-100.202c1.604,0.048,3.183-0.013,4.733-0.194c6.101-0.229,12.218-0.387,18.371-0.387
+		c270.434,0,490.438,220.014,490.438,490.44c0,119.707-43.133,229.515-114.648,314.755c-0.811,0.671-1.596,1.375-2.354,2.133
+		l-60.153,60.146l-152.843,152.852L899.999,1656.474z"/>
+</g>
+</svg>
+                                </h1>
+                            <div class="container mt-9">
+                                <div class="cardz">
+                                    <img src="images/IMG_20260629_210414_964.jpg" alt="" class="w-auto h-auto object-cover">
+                                </div>
+                                <div class="cardz">
+                                    <img src="images/IMG_20260629_210427_097.jpg" alt="" class="w-auto h-auto object-cover">
+                                </div>
+                                <div class="cardz">
+                                    <img src="images/IMG_20260629_211030_786.jpg" alt="" class="w-auto h-auto object-cover">
+                                </div>
+                                <div class="cardz">
+                                    <img src="images/IMG_20260629_211039_598.jpg" alt="" class="w-auto h-auto object-cover">
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pb-16 w-[min(1120px,calc(100%-2rem))] mx-auto max-sm:w-[min(calc(100%-1.25rem),1120px)]">
+                    <div class="grid gap-[0.55rem] mb-[1.4rem]" data-reveal>
+                        <h2 class="m-0 text-[clamp(1.05rem,1.7vw,1.25rem)] leading-[1.65] text-[#5f625d] tracking-[-0.04em] ">The Best Memories</h2>
+                        <p class=" max-w-[42rem] font-['estrada'] m-0 text-[#5f625d] text-4xl leading-[1.65]">Each part represents a moment of our time, joy, and connection that make our relationship something.. I guess special?</p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 max-md:grid-cols-1">
+                        <article class="relative p-5 border border-[rgba(16,18,20,0.14)] bg-[#f5efe6] shadow-[0_18px_40px_rgba(16,18,20,0.08)] rounded-[24px] min-h-[18rem]" data-reveal>
+                            <div class="aila1 relative min-h-[18rem] rounded-[20px] overflow-hidden">
+                                <div>
+                                    <img src="images/IMG_20260629_231003_261.jpg" alt="" class="rounded-[20px] w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="relative p-5 border border-[rgba(16,18,20,0.14)] bg-[#f5efe6] shadow-[0_18px_40px_rgba(16,18,20,0.08)] rounded-[24px] min-h-[18rem] translate-y-[1.1rem] max-md:translate-y-0" data-reveal>
+                            <div class="aila2 relative min-h-[18rem] rounded-[20px] overflow-hidden">
+                                <div>
+                                    <img src="images/1783249733925.jpg" alt="" class="rounded-[20px] w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="relative p-5 border border-[rgba(16,18,20,0.14)] bg-[#f5efe6] shadow-[0_18px_40px_rgba(16,18,20,0.08)] rounded-[24px] min-h-[18rem] translate-y-[2.2rem] max-md:translate-y-0" data-reveal>
+                            
+                            <div class="uspic relative min-h-[18rem] rounded-[20px] overflow-hidden">
+                                <div>
+                                    <img src="images/1779891724474.jpg" alt="" class="rounded-[20px] w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+               <section class="grid grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] gap-8 items-center pb-16 w-[min(1120px,calc(100%-2rem))] mx-auto max-md:grid-cols-1 max-sm:w-[min(calc(100%-1.25rem),1120px)]">
+                    <!-- Left Column: Copy -->
+                    <div class="grid gap-[0.6rem] pb-[0.6rem]">
+                        <h2 class="m-0 font-['ayles'] tracking-[-0.04em] leading-[0.96] text-[clamp(2.4rem,5vw,4.5rem)]" data-reveal>
+                            A letter for you, Aila.
+                        </h2>
+                        <p class="max-w-[32rem] m-0 text-[#5f625d] leading-[1.65]" data-reveal>
+                            Click mo yung envelope hehe
+                        </p>
+                    </div>
+
+                    <!-- Right Column: Interactive Envelope -->
+                    <div class="flex justify-center items-center min-h-[380px] w-full" data-reveal>
+                        <div id="envelope-card" class="card cursor-pointer">
+                            <div class="relative bg-[#101214] w-[300px] sm:w-[350px] group transition-all duration-700 aspect-video flex items-center justify-center rounded-lg shadow-xl overflow-visible">
+                                
+                                <!-- Inner Letter Card -->
+                                <div id="envelope-letter" class="transition-all flex flex-col items-center py-5 px-6 justify-start duration-300 group-hover:duration-1000 bg-[#ece3d4] w-[90%] h-full absolute group-hover:-translate-y-20 rounded-t-md shadow-md border border-[rgba(16,18,20,0.1)]">
+                                    <p class="text-lg font-['ayles'] font-semibold text-[#101214]">
+                                        For Aila
+                                    </p>
+                                    <p class="text-[11px] sm:text-[13px] text-[#5f625d] text-center mt-2 line-clamp-2">
+                                        I know how annoying I am, especially these past few days...
+                                    </p>
+                                    <span class="text-[10px] text-[#8e918a] mt-auto font-medium">Click to open full letter mehehe</span>
+                                </div>
+
+                                <!-- Wax Seal Stamp -->
+                                <button id="wax-seal" class="seal bg-rose-600 text-rose-100 w-11 aspect-square rounded-full z-40 text-[11px] flex items-center justify-center font-bold [clip-path:polygon(50%_0%,_80%_10%,_100%_35%,_100%_70%,_80%_90%,_50%_100%,_20%_90%,_0%_70%,_0%_35%,_20%_10%)] group-hover:opacity-0 transition-all duration-700 group-hover:scale-0 group-hover:rotate-180 border-2 border-rose-800 shadow-lg">
+                                    AILA
+                                </button>
+
+                                <!-- Envelope Flaps (CSS Polygon Shapes) -->
+                                <div class="tp transition-all duration-700 group-hover:duration-300 bg-[#32363a] absolute group-hover:[clip-path:polygon(50%_0%,_100%_0,_0_0)] w-full h-full [clip-path:polygon(50%_50%,_100%_0,_0_0)] z-30"></div>
+                                <div class="lft transition-all duration-700 absolute w-full h-full bg-[#1e2124] [clip-path:polygon(50%_50%,_0_0,_0_100%)] z-20"></div>
+                                <div class="rgt transition-all duration-700 absolute w-full h-full bg-[#272a2e] [clip-path:polygon(50%_50%,_100%_0,_100%_100%)] z-20"></div>
+                                <div class="btm transition-all duration-700 absolute w-full h-full bg-[#181a1c] [clip-path:polygon(50%_50%,_100%_100%,_0_100%)] z-20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Fullscreen Letter Modal -->
+                <div id="letter-modal" class="fixed inset-0 bg-black/60 backdrop-blur-md z-[100] flex items-center justify-center p-4 sm:p-6 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="modal-card" class="bg-[#ece3d4] border border-[rgba(16,18,20,0.15)] rounded-[24px] my-auto max-h-[85vh] overflow-y-auto max-w-[600px] w-full p-6 sm:p-10 shadow-2xl relative transform scale-90 transition-all duration-300">
+        <!-- Letter Content -->
+        <div class="flex items-center justify-between border-b border-[rgba(16,18,20,0.1)] pb-4 mb-6">
+            <span class="text-xs uppercase tracking-widest text-[#5f625d] font-semibold">I'm sorry :((</span>
+        </div>
+
+        <h3 class="font-['ayles'] text-2xl sm:text-3xl text-[#101214] mb-4">Hello Aila,</h3>
+
+        <div class="space-y-4 text-[#5f625d] leading-[1.75] text-[1rem] sm:text-[1.1rem]">
+            <p>
+                I know I have been a bit annoying lately, and I want to apologize for that. I understand that my actions may have caused you some frustration, and I'm truly sorry for that.
+                I want you to know na I value our relationship (not the romantic ha) and I want to make things right. I want to make sure that I am capable of being a better man for you.
+                I know na the reason why you're suddenly becoming distant is because of my actions and I am aware of that.
+                I want to assure you na I am committed para ma-improve at maayos ko sarili ko, kasi nga katulad ng sabi ko kanina na gusto kong maging maayos na lalaki para sa'yo. I want to be someone na you can rely on and trust, and I want to make sure na I am doing everything I can para maging maayos ang relationship natin.
+                Sana mapatawad mo ako sa mga actions ko especially sa pago-overthink ko. No worries, hindi ko naman na uulitin yung mga nagawa ko last time kasi alam kong naging pangit yun at feel ko na-drain kita by my actions.
+            </p>
+
+            <p>
+                Do I deserve a second chance? I hope so. If I do, would the trust and connection and vibes between us will be restored? I hope so. Damn, I thought that I will not make any mistakes in our friendship/relationship, but I guess I was wrong.
+            </p>
+
+            <p class="pt-2">
+                I hope this letter finds you well and I hope you're doing okay. I want to meet you as I am making this letter— gusto kitang makita at mayakap. Pasensya na kung parang nagiging demanding na talaga ako.
+            </p>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-[rgba(16,18,20,0.1)] flex justify-between items-center text-sm text-[#5f625d]">
+            <span class="font-['ayles'] text-lg text-[#101214]">Always,</span>
+            <span class="font-medium font-['estrada']">LJ</span>
+        </div>
+    </div>
+</div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
