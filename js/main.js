@@ -159,17 +159,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const envelope = document.getElementById("envelope-card");
     const modal = document.getElementById("letter-modal");
     const modalCard = document.getElementById("modal-card");
-    const closeBtn = document.getElementById("close-modal");
 
-    // Open Fullscreen Modal on Envelope Click
+    // Open Modal
     envelope.addEventListener("click", () => {
-        // Show overlay
         modal.classList.remove("opacity-0", "pointer-events-none");
         
-        // GSAP Popup animation for modal card
         gsap.fromTo(modalCard, 
             { scale: 0.8, y: 30, opacity: 0 }, 
-            { scale: 1, y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.4)" }
+            { scale: 1, y: 0, opacity: 1, duration: 0.4, ease: "back.out(1.2)" }
         );
     });
 
@@ -187,9 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    closeBtn.addEventListener("click", closeModal);
-    
-    // Close modal when clicking outside content area
+    // Close when clicking directly on the backdrop (outside modal-card)
     modal.addEventListener("click", (e) => {
         if (e.target === modal) {
             closeModal();
